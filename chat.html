@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
-    <title>More - Kokoa Clone</title>
+    <title>chat - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -23,101 +23,53 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">More</h1>
-      <div class="screen-header__icons">
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">jungmin</h1>
+      </div>
+      <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <div class="screen-header__icons-red">
-          <span>
-            <a href="setting.html">
-              <i class="fas fa-cog fa-lg"></i>
-            </a>
-            <div class="reddot"></div>
-          </span>
-        </div>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen more-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="puppy.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Iseul</h4>
-            <h6 class="user-component__subtitle">+1 787 666 999</h6>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuseday, June 30,2020</div>
+      <div class="message-row">
+        <img src="mong.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">nico</span>
+          <div class="message__info">
+            <span class="message__bubble">hi!</span>
+            <span class="message__time">21:12</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <i class="far fa-comment-alt fa-2x"></i>
-        </div>
       </div>
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <i class="fas fa-calendar"></i>
-          <span>Calendar</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-smile-beam"></i>
-          <span>Talk Drive</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-paint-roller"></i>
-          <span>Emotions</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <span>Themes</span>
-        </div>
-      </div>
-      <div class="more-suggestions">
-        <h4 class="more-suggestions__title">Suggestions</h4>
-        <div class="more-suggestions__icons">
-          <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <span class="more-suggestions__icon-text">Kokoa Story</span>
-          </div>
-          <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <span class="more-suggestions__icon-text">Kokoa Story</span>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">hi!</span>
+            <span class="message__time">21:12</span>
           </div>
         </div>
       </div>
     </main>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><div class="reddot"></div>
-            <i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column"><i class="far fa-plus-square fa-lg"></i></div>
+      <div class="reply__column">
+        <input type="text" placeholder="write a message..." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>Your screen is too big </span>
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
