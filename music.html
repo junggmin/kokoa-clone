@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Music- Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="music-info">
+      <header class="music-info__top"></header>
+      <div class="music-info__singer">
+        <img src="imgfile/ost.jpg" />
+        <span>COOKIERUN</span>
+      </div>
+      <div class="music-info__shuffle">
+        <div><i class="fas fa-heart"></i></div>
+      </div>
+      <ul class="music-info__list">
+        <li class="music-info__list__li">
+          <input type="radio" id="chk1" name="list" checked="checked" />
+          <label for="chk1">
+            <div class="music-info__list__li__img">
+              <img src="imgfile/timekeeper.png" />
+            </div>
+            <div class="music-info__list__li__name">
+              <span>시간지기 쿠키의 도전</span>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </label>
+        </li>
+
+        <li class="music-info__list__li">
+          <input type="radio" id="chk2" name="list" />
+          <label for="chk2">
+            <div class="music-info__list__li__img">
+              <img src="imgfile/oven.jpg" />
+            </div>
+            <div class="music-info__list__li__name">
+              <span>기억의 섬</span>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </label>
+        </li>
+        <li class="music-info__list__li">
+          <input type="radio" id="chk3" name="list" />
+          <label for="chk3">
+            <div class="music-info__list__li__img">
+              <img src="imgfile/kokoacookie.jpg" />
+            </div>
+            <div class="music-info__list__li__name">
+              <span>코코아맛 쿠키의 도전</span>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </label>
+        </li>
+        <li class="music-info__list__li">
+          <input type="radio" id="chk4" name="list" />
+          <label for="chk4">
+            <div class="music-info__list__li__img">
+              <img src="imgfile/time.jpg" />
+            </div>
+            <div class="music-info__list__li__name">
+              <span>덧없는 시간의 심연</span>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </label>
+        </li>
+      </ul>
+      <div class="music-info__now">
+        <div class="music-info__now__name">
+          <span class="music-info__now__name-second">시간지기 쿠키의 도전</span>
+        </div>
+        <i class="fas fa-step-backward"></i>
+        <div class="playbutton">
+          <input id="stop" type="checkbox" name="stop" />
+          <label for="stop">
+            <i id="playbtn" class="fas fa-play"></i>
+          </label>
+        </div>
+        <i class="fas fa-step-forward"></i>
+      </div>
+    </div>
+    <div id="player"></div>
+    <div id="no-mobile">
+      <span>Your screen is too big </span>
+    </div>
+    <script src="musicplay.js"></script>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fas fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><div class="reddot"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="music.html">
+            <i class="fas fa-music fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

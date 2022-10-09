@@ -98,7 +98,8 @@
     color: white;
   }
 }
-.open-post__heart--count:hover i {
+.open-post__heart--count:hover i,
+.music-info__shuffle:hover i {
   will-change: transform;
   animation: heartBeat 1s linear infinite;
 }
