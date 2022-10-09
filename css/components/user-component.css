@@ -45,3 +45,14 @@
   margin-bottom: 10px;
   display: block;
 }
+
+.cookie-friends img,
+.cookie-chat img {
+  border: 1px solid black;
+}
+.cookie-friends {
+  margin-bottom: 20px;
+}
+.cookie-chat a {
+  margin: 0px 10px;
+}

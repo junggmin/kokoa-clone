@@ -14,13 +14,20 @@
 
 .friends-screen {
   padding: 0px var(--horizontal-space);
+  height: 110vh;
 }
 .friends-screen__channel {
   margin-top: 25px;
   border-top: var(--main-border);
   padding-top: 15px;
 }
-
+.cookie-header {
+  border-top: var(--main-border);
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 .friends-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
@@ -39,13 +46,14 @@
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
-  width: 100vw;
-  height: 100vh;
   top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 132px;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
